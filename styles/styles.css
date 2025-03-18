@@ -1,28 +1,36 @@
+:root {
+    --img-width: 200px;
+    --subtle-border: 1px solid rgb(0 0 0 / 0.2);
+    --padding: 10px;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 
 h1 {
     color: darkblue;
+    padding: 0 var(--padding);
 }
 
 main img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
-    border: 1px solid black;
+    border: var(--subtle-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin: 0 var(--padding);
 }
 
 p {
-    padding: 0;
+    padding: 0 var(--padding);
 }
 
 main {
@@ -31,15 +39,15 @@ main {
 
 aside {
     width: 500px;
-    margin: 15px 0;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 0 10px;
+    margin: 15px var(--padding);
+    border: var(--subtle-border);
+    padding: 0 var(--padding);
     background-color: #f8b541;
     color: black;
 }
 
 aside img {
-    width: 200px;
+    width: var(--img-width);
     height: auto;
 }
 
