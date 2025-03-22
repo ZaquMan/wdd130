@@ -1,15 +1,68 @@
 :root {
-    --primary-color: #5ac4c4;
+    --primary-color: #1c5d99;
     --secondary-color: #222222;
-    --accent1-color: #e6e6e6;
-    --accent2-color: #1c5d99;
+    --accent1-color: #5ac4c4;
+    --accent2-color: #e6e6e6;
+}
+
+* {
+    /* max-width: 800px; */
 }
 
 h1 {
-    /* color: var(--primary-color); */
+    font-family: 'Trade Winds';
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: 'Nunito Sans';
+    color: var(--accent1-color);
+}
+
+p {
+    font-family: 'Nunito Sans';
+    color: var(--secondary-color);
 }
 
 footer img {
     width: 25px;
     height: auto;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+.hero h1 {
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    background-color: #e6e6e66b;
+    width: 100%;
+}
+
+.hero p {
+    position: absolute;
+    top: 10em;
+    left: 10%; /* This looks centered to me.  I don't know why though :'( */
+    width: 80%;
+    background-color:#5ac4c460;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    height: auto;
+    padding: 1em;
 }
