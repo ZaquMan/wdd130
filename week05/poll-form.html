@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form Example</title>
+    <meta name="author" content="Zach Barnett">
+    <meta name="description" content="An example using a form to poll a user">
+</head>
+<body>
+    <header>
+        <h1>WDD130 | Zach Barnett | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- Form elements go here -->
+                 <label for="fullname">Full Name</label>
+                 <input id="fullname" name="fullname">
+                 <label >Email Address <input type="email" name="useremail"></label>
+                 <!-- This is an implicit label.  The input is inside the label element, so 
+                  you don't need to the for="" in the label or id="" in the input -->
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- Form elements go here -->
+                 <label for="browser">What is your favorite browser?</label>
+                 <select id="browser" name="browser">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option selected value="brave">Brave</option>
+                    <option value="edge">Microsoft Edge</option>
+                 </select>
+                 <label for="pet">Do you have a household pet?</label>
+                 <input type="checkbox" id="pet" name="pet">
+                 <label for="feedback">List the places you have lived.</label>
+                 <textarea id="feedback" name="feedback" placeholder="Tampa Florida, Mexico City Mexico, Toronto Canada" rows="4"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 | HTML Form - User Poll Activity | Zach Barnett</p>
+    </footer>
+</body>
+</html>
