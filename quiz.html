@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="./styles/quiz.css">
+    <meta name="author" content="Zach Barnett">
+    <meta name="description" content="A quiz about HTML and CSS demonstrating a web form.">
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            
+            <!-- Question 1:-->
+                
+            <label for="q1"><span class="numbering">1.</span> What is declaration that must be at the start of every html document?</label>
+            <!-- Answer 1: <!DOCTYPE html> -->
+            <input type="text" id="q1" name="q1">
+
+            <!-- Question 2: -->
+            <label for="q2"><span class="numbering">2.</span> Write a CSS ruleset for a element with the class "blue" that sets the background color to blue.</label>
+            <!-- Answer 2: --> 
+            <textarea id="q2" name="q2" rows="4"></textarea>
+
+            <!-- Question 3: -->
+            <label for="q3"><span class="numbering">3.</span> What does CSS stand for?</label>
+                
+            <!-- Answer 3: -->
+            <select id="q3" name="q3">
+                <option value="" selected disabled>Choose one...</option>
+                <option>Content Stylization Sections</option>
+                <option>Cascading Style Sheets</option>
+                <option>Cesar Salad Supremacy</option>
+                <option>Clean Simple Styles</option>
+            </select>
+                
+            <!-- Question 4: -->
+            <label for="q4"><span class="numbering">4.</span> Given the following declaration, how many columns will be created?</label>
+                
+            <div>
+                <p class="code-snippet">grid-template: 1.5em 1.2em 1.2em / 5em 5em 5em 5em</p>
+            </div>
+            <!-- Answer 4: -->
+            <input type="number" id="q4" name="q4">
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        &copy;2025 | Zach Barnett | WDD130 Optional Practice Quiz Form
+    </footer>
+</body>
+</html>

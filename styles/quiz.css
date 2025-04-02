@@ -1,0 +1,61 @@
+:root {
+    --accent-color: darkblue;
+}
+
+* {
+
+}
+
+h1 {
+    color: var(--accent-color);
+}
+
+header, footer {
+    margin: 1em 1em 1em 2em;
+    max-width: 450px;
+}
+
+main {
+    margin: 1em;
+    background-color: lightgray;
+    border: 1px solid #00000020;
+    border-radius: 5px;
+    max-width: 450px;
+}
+
+form {
+    /* display: grid; */
+    /* place-content: center; */
+    padding: 0 1em;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+button {
+    font-size:large;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.code-snippet {
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.numbering {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    font-weight: bold;
+}
