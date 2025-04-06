@@ -211,6 +211,7 @@ footer img {
 .address iframe {
     width: 300px;
     height: 200px;
+    border: 0;
 }
 
 .contact form {
