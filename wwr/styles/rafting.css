@@ -1,9 +1,7 @@
 :root {
-    /* --primary-color: #1c5d99; */
-    --primary-color: #5ac4c4;
+    --primary-color: #1c5d99;
     --secondary-color: #222222;
-    /* --accent1-color: #5ac4c4; */
-    --accent1-color: #1c5d99;
+    --accent1-color: #5ac4c4;
     --accent2-color: #e6e6e6;
     --basic-border: 1px solid #0000006e;
     --shadow-border: 1px solid #0000004a;
@@ -26,7 +24,7 @@ header {
     display: grid;
     grid-template: 1fr / 1fr 2fr;
     place-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
 
 .navigation {
@@ -53,8 +51,8 @@ header {
 
 h1 {
     font-family: 'Trade Winds';
-    color: var(--accent1-color);
-    text-shadow: 0px 0px 10px var(--primary-color);
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--accent1-color);
     background-color: #ffffff6b;
     width: 100%;
     text-align: center;
@@ -62,8 +60,8 @@ h1 {
 
 h2 {
     font-family: 'Trade Winds';
-    color: var(--accent1-color);
-    text-shadow: 0px 0px 10px var(--primary-color);
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--accent1-color);
 }
 
 p {
@@ -157,7 +155,7 @@ footer {
     display: grid;
     grid-template-columns: 150px auto 150px;
     place-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
 
 footer p {
@@ -192,7 +190,6 @@ footer img {
 
 .address { 
     display: grid;
-    grid-template: repeat(auto, 2) / repeat(auto, 4);
     justify-items: center;
     align-items: center;
     justify-content: center;
