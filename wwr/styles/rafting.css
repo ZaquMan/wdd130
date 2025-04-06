@@ -208,6 +208,11 @@ footer img {
     padding: 5px;
 }
 
+.address iframe {
+    width: 300px;
+    height: 200px;
+}
+
 .contact form {
     width: 100%;
 }
