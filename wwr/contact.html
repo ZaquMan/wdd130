@@ -64,31 +64,36 @@
                 </figure>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact simple-box">
         <!-- Contact form that collects the user's name, -->
          <!-- email, purpose, message, and newsletter -->
             <h2>Drop Us A Line</h2>
             <form>
-                <fieldset>
+                <fieldset class="image-row">
                     <div>
                         <label for="name">Your Name</label>
-                        <input id="name" name="name">
-
+                        <input id="name" name="name" required>
+                    </div>
+                    <div>
                         <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Please select the nature of your message:</legend>
-                    <div>
-                        <input type="radio" id="messageChoice1" name="message-type" value="general">
-                        <label for="messageChoice1">General Inquiry</label>
-
+                    <div class="image-row">
+                        <div>
+                            <input type="radio" id="messageChoice1" name="message-type" value="general" checked>
+                            <label for="messageChoice1">General Inquiry</label>
+                        </div>
+                        <div>
                         <input type="radio" id="messageChoice2" name="message-type" value="reservation">
                         <label for="messageChoice2">Reservation Question</label>
-
-                        <input type="radio" id="messageChoice3" name="message-type" value="suggestion">
-                        <label for="messageChoice3">Website Suggestion</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="messageChoice3" name="message-type" value="suggestion">
+                            <label for="messageChoice3">Website Suggestion</label>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset>

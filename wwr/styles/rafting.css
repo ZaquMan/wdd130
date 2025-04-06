@@ -16,7 +16,7 @@
 }
 
 header, .address, .simple-box, .hero,
-.history, .contact {
+.history {
     margin: 1rem;
     padding: 10px;
     border: var(--basic-border);
@@ -70,6 +70,7 @@ p {
 
 .simple-box {
     display: grid;
+    grid-template: auto auto / 100%;
     justify-items: center;
     align-items: center;
     justify-content: center;
@@ -77,6 +78,7 @@ p {
 
 .image-row {
     display: flex;
+    width: 100%;
     flex: 0 1 auto;
     justify-content: space-around;
 }
@@ -188,7 +190,7 @@ footer img {
     text-decoration: none;
 }
 
- .address { 
+.address { 
     display: grid;
     grid-template: repeat(auto, 2) / repeat(auto, 4);
     justify-items: center;
@@ -196,12 +198,24 @@ footer img {
     justify-content: center;
 } 
 
-
 .address h2 {
     grid-column: span 4;
     
 }
 
+.employees img {
+    max-width: 200px;
+    height: auto;
+}
+
 .address div {
     padding: 5px;
+}
+
+.contact form {
+    width: 100%;
+}
+
+.contact textarea {
+    width: 100%;
 }
