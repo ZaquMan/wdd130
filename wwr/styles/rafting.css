@@ -175,14 +175,17 @@ p {
     padding: 5px;
 }
 
-/* .hero-elements {
-    position: absolute;
-    top: 1em;
-} */
+.newsletter fieldset {
+    border: 5px solid var(--primary-color);
+    background-color: var(--accent2-color);
+    box-shadow: 5px 3px 3px var(--accent1-color);
 
-/* .hero-elements h1 {
-    position: relative;
-} */
+}
+
+.index-trips img {
+    border: 5px solid var(--primary-color);
+    box-shadow: 5px 3px 3px var(--accent1-color);
+}
 
 .history {
     display: grid;
