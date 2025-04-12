@@ -294,3 +294,57 @@ footer img {
     right: 10%;
     max-width: 600px;
 }
+
+.adventure-highlights {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+}
+
+.adventure-highlights article {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--accent2-color);
+}
+
+.adventure-highlights img {
+    justify-self: center;
+    max-width: 95%;
+    width: auto;
+    height: auto;
+    max-height: 300px;
+}
+
+.call-to-action {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+}
+
+.call-to-action .button {
+    justify-self: center;
+    text-align: center;
+    font-size: 3rem;
+    min-width: 40%
+}
+
+.trip-table thead {
+    background-color: var(--primary-color);
+}
+
+.trip-table thead th {
+    color: white;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.trip-table tbody th, td {
+    padding: 0 15px;
+}
+
+.trip-table tbody tr:nth-child(odd) {
+    background-color: var(--accent1-color);
+}
