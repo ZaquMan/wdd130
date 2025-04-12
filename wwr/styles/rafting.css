@@ -14,7 +14,7 @@
 }
 
 header, footer, .address, .simple-box, .hero,
-.history {
+.history, .newsletter {
     margin: 1rem;
     padding: 10px;
     /* border: var(--basic-border); */
@@ -29,6 +29,41 @@ header {
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-family: 'Trade Winds';
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--accent1-color);
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Trade Winds';
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--accent1-color);
+}
+
+p {
+    /* color: var(--secondary-color); */
+    color: #000000;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    place-items: center;
+    background-color: var(--accent1-color);
+}
+
+footer p {
+    grid-column: 2 / 3;
+}
+
+footer img {
+    max-width: 30px;
+    height: auto;
 }
 
 .even-section {
@@ -72,25 +107,6 @@ a {
 .button a {
     padding: 0 10px;
     font-size: 1.2rem;
-}
-
-h1 {
-    font-family: 'Trade Winds';
-    color: var(--primary-color);
-    text-shadow: 0px 0px 10px var(--accent1-color);
-    width: 100%;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Trade Winds';
-    color: var(--primary-color);
-    text-shadow: 0px 0px 10px var(--accent1-color);
-}
-
-p {
-    /* color: var(--secondary-color); */
-    color: #000000;
 }
 
 .simple-box {
@@ -157,13 +173,17 @@ p {
 
 .hero h2 {
     position: absolute;
-    /* color: var(--primary-color); */
+    text-shadow: 0px 0px 5px var(--accent1-color);
+    color: black;
+    left: 50%;
+    top: 4.5em;
+    transform: translate(-50%, -50%);
+}
+
+.about-us h2 {
     display: block;
     color: var(--secondary-color);
-    width: fit-content;
-    left: 50%;
-    /* top: 4.5em; */
-    transform: translate(-50%, -50%);
+    top: auto;
 }
 
 .hero p {
@@ -186,7 +206,7 @@ p {
     border: 5px solid var(--primary-color);
     background-color: var(--accent2-color);
     box-shadow: 5px 3px 3px var(--accent1-color);
-
+    width: 100%;
 }
 
 .index-trips img {
@@ -215,17 +235,6 @@ p {
     padding: 1rem;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 150px auto 150px;
-    place-items: center;
-    background-color: var(--accent1-color);
-}
-
-footer p {
-    grid-column: 2 / 3;
-}
-
 .sociallinks {
     grid-column: 3 / 4;
 }
@@ -241,11 +250,6 @@ footer p {
 .sociallinks li {
     flex: 1 1 auto;
     padding: 5px;
-}
-
-footer img {
-    max-width: 30px;
-    height: auto;
 }
 
 .address { 
