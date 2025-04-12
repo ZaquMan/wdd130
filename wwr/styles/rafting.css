@@ -137,7 +137,6 @@ p {
     position: absolute;
     top: 1em;
     background-color: #ffffff6b;
-
 }
 
 .hero article {
@@ -153,15 +152,23 @@ p {
     width: 200px;
     height: auto;
     padding: 1em;
+    transform: translate(0, -10%);
 }
 
 .hero h2 {
     position: absolute;
     /* color: var(--primary-color); */
-    color: black;
+    display: block;
+    color: var(--secondary-color);
+    width: fit-content;
     left: 50%;
-    top: 4.5em;
+    /* top: 4.5em; */
     transform: translate(-50%, -50%);
+}
+
+.hero p {
+    position:relative;
+    top: 1rem;
 }
 
 .hero .button {
