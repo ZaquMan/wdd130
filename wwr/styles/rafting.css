@@ -17,7 +17,7 @@ header, footer, .address, .simple-box, .hero,
 .history {
     margin: 1rem;
     padding: 10px;
-    border: var(--basic-border);
+    /* border: var(--basic-border); */
 }
 
 header {
@@ -25,6 +25,19 @@ header {
     grid-template: 1fr / 1fr 2fr;
     place-items: center;
     background-color: var(--accent1-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.even-section {
+    background-color: var(--accent2-color);
+}
+
+.borderless {
+    /* border: 0; */
+    padding: 0;
 }
 
 .navigation {
@@ -43,9 +56,21 @@ header {
 
 .navigation a {
     display: block;
-    text-decoration: none;
     padding: 0 10px;
     color: #000000;
+    font-size: 1.2rem;
+}
+
+.button {
+    display: block;
+    background-color: var(--accent1-color);
+    border: var(--basic-border);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.button a {
+    padding: 0 10px;
     font-size: 1.2rem;
 }
 
@@ -53,7 +78,6 @@ h1 {
     font-family: 'Trade Winds';
     color: var(--primary-color);
     text-shadow: 0px 0px 10px var(--accent1-color);
-    background-color: #ffffff6b;
     width: 100%;
     text-align: center;
 }
@@ -99,7 +123,7 @@ p {
 
 .hero {
     position: relative;
-    margin: 1rem;
+    padding: 0;
 }
 
 .hero img {
@@ -112,6 +136,8 @@ p {
 .hero h1 {
     position: absolute;
     top: 1em;
+    background-color: #ffffff6b;
+
 }
 
 .hero article {
@@ -128,6 +154,35 @@ p {
     height: auto;
     padding: 1em;
 }
+
+.hero h2 {
+    position: absolute;
+    /* color: var(--primary-color); */
+    color: black;
+    left: 50%;
+    top: 4.5em;
+    transform: translate(-50%, -50%);
+}
+
+.hero .button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 8.5em;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* .hero-elements {
+    position: absolute;
+    top: 1em;
+} */
+
+/* .hero-elements h1 {
+    position: relative;
+} */
 
 .history {
     display: grid;
@@ -183,10 +238,6 @@ footer img {
     height: auto;
 }
 
-.sociallinks a {
-    text-decoration: none;
-}
-
 .address { 
     display: grid;
     justify-items: center;
@@ -219,4 +270,27 @@ footer img {
 
 .contact textarea {
     width: 100%;
+}
+
+.tagline {
+    position: relative;
+    background-color: var(--primary-color);
+    width: auto;
+    height: 450px;
+}
+
+.tagline img {
+    position:absolute;
+    top: auto;
+    left: 10%;
+}
+
+.tagline div {
+    display: block;
+    padding: 0 1rem 1rem 1rem;
+    background-color: var(--accent2-color);
+    position: absolute;
+    top:auto;
+    right: 10%;
+    max-width: 600px;
 }

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splash White Water Rafting | Contact Us</title>
+    <title>Splash White Water Rafting | Homepage</title>
     <meta name="author" content="Zach Barnett">
-    <meta name="description" content="The Contact Us page for Splash White Water Rafting">
+    <meta name="description" content="The Homepage for Splash White Water Rafting">
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,62 @@
         </nav>
     </header>
     <main>
+        <div class="hero borderless">
+        <!-- <div class="hero"> -->
+            <img src="images/home_hero.webp" alt="Banner image">
+            <h1>ADVENTURE STARTS HERE</h1>
+            <h2> Drop In and Explorer with Splash</h2>
+<!-- "Button" linking to trips page -->
+                <a class="button" href="trips.html">Find a Trip</a>
 
+            </div>
+        </div>
+        <div>
+            <!-- Newsletter signup -->
+             <form class="contact">
+                <fieldset class="image-row">
+                    <legend>Join our newsletter to learn about new trips and see what we're up to!</legend>
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Hidden input to mimic the newsletter checkbox on the contact form.
+                         Allows for easier reusing backend code -->
+                    <input type="hidden" id="newsletter" name="newsletter" value="on">
+                    <button type="submit">Sign me up!</button>
+                </fieldset>
+             </form>
+        </div>
+        <div class="simple-box image-row index-trips">
+            <!-- Pictures highlighting aspects of trips -->
+            <figure>
+                <img src="images/muddy-river-valley.webp" alt="Rivers">
+                <figcaption>Rivers</figcaption>
+            </figure>
+            <figure>
+                <img src="images/raft-tossed-in-rapids.webp" alt="Rapids">
+                <figcaption>Rapids</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafts-beached-on-rocky-shore.webp" alt="Shore Activities">
+                <figcaption>Shore Activities</figcaption>
+            </figure>
+        </div>
+        <div class="simple-box even-section tagline">
+            <!-- Picture and tag line for the company -->
+            <img src="images/raft-in-rock-lined-rapids.webp" alt="A raft navigating rock-lined rapids">
+            <div>
+                <h2>It's Not Just Floating Downhill</h2>
+                White water rafting is an amazing team building activity.  Putting a group of people in
+                a raft, surrounded by a churning river provides an ideal scenario to strengthen our bonds
+                with those around us.  Add breathtaking vistas, fun and light-hearted activities, and you
+                get unforgettable memories.
+            </div>
+        </div>
     </main>
     <footer>
         <p>
